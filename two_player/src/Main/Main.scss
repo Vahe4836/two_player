@@ -1,0 +1,54 @@
+// Templates
+
+%zone_style {
+    width: 30vw;
+    height: 40vh;
+    margin: 0;
+}
+
+%zone_div_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
+// Style
+
+.main_div {
+    width: 30vw;
+    height: 80vh;
+    background-color: #111;
+
+    .red_div {
+        @extend %zone_style;
+        background-color: brown;
+
+        .red_zone_text_div{
+            @extend %zone_div_center;
+            .red_zone_text {
+                color: rgb(190, 190, 190);
+                font-size: 40px;
+                transform: rotate(180deg);
+                margin: 0;
+            }
+        }
+        
+    }
+
+    .blue_div {
+        @extend %zone_style;
+        background-color: rgb(30, 94, 203);
+
+        .blue_zone_text_div{
+            @extend %zone_div_center;
+            .blue_zone_text {
+                color: rgb(190, 190, 190);
+                font-size: 40px;
+                margin: 0;
+            }
+        }
+        
+    }
+}
