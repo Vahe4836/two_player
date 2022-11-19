@@ -22,6 +22,7 @@ export default function Main() {
                     }
 
                 }}>
+                    
                 <div className='red_zone_text_div'>
                     {
                         redScore > 0 && <p className='red_zone_text'>
