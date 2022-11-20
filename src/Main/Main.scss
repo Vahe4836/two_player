@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-%zone_div_center{
+%zone_div_center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +25,9 @@
         @extend %zone_style;
         background-color: brown;
 
-        .red_zone_text_div{
+        .red_zone_text_div {
             @extend %zone_div_center;
+
             .red_zone_text {
                 color: rgb(190, 190, 190);
                 font-size: 40px;
@@ -34,21 +35,24 @@
                 margin: 0;
             }
         }
-        
+
     }
+
 
     .blue_div {
         @extend %zone_style;
         background-color: rgb(30, 94, 203);
 
-        .blue_zone_text_div{
+
+        .blue_zone_text_div {
             @extend %zone_div_center;
+
             .blue_zone_text {
                 color: rgb(190, 190, 190);
                 font-size: 40px;
                 margin: 0;
             }
         }
-        
+
     }
 }

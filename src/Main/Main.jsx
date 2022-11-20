@@ -23,6 +23,7 @@ export default function Main() {
 
                 }}>
 
+
                 <div className='red_zone_text_div'>
                     {
                         redScore > 0 && <p className='red_zone_text'>
@@ -34,20 +35,23 @@ export default function Main() {
                         </p>
                     }
                 </div>
+
             </div>
 
 
 
             <div className='blue_div'
                 style={{ height: `${blueScore * 4}vh` }}
-                onClick={() => { 
+                onClick={() => {
 
                     if (blueScore < 20) {
                         setBlueScore(blueScore + 1);
                         setRedScore(redScore - 1);
                     }
 
-                }}>
+                }}
+            >
+
                 <div className='blue_zone_text_div'>
                     {
                         blueScore > 0 && <p className='blue_zone_text'>
@@ -59,6 +63,7 @@ export default function Main() {
                         </p>
                     }
                 </div>
+
             </div>
 
         </div>
