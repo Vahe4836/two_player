@@ -1,0 +1,68 @@
+// Imports 
+
+@import '../Media/Variables.scss';
+@import '../Media/Breakpoints.scss';
+
+// Templates
+
+// %zone_div_center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     vertical-align: middle;
+//     height: 100%;
+// }
+
+// Media
+
+@include Bg_mobile {
+    .main_div {
+        // display: flex;
+        // justify-content: center;
+        width: 90vw;
+        // height: 90vh;
+
+        .red_div {
+            width: 90vw;
+            height: 45vh;
+
+            .red_zone_text_div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+                height: 100%;
+                // @extend %zone_div_center;
+
+                .red_zone_text {
+                    color: rgb(190, 190, 190);
+                    font-size: 40px;
+                    transform: rotate(180deg);
+                    margin: 0;
+                }
+            }
+
+        }
+
+        .blue_div {
+            width: 90vw;
+            height: 45vh;
+
+            .blue_zone_text_div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+                height: 100%;
+                // @extend %zone_div_center;
+
+                .blue_zone_text {
+                    color: rgb(190, 190, 190);
+                    font-size: 40px;
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './Main.scss';
-
+import './Main_media.scss';
 
 
 export default function Main() {
@@ -22,14 +22,14 @@ export default function Main() {
                     }
 
                 }}>
-                    
+
                 <div className='red_zone_text_div'>
                     {
                         redScore > 0 && <p className='red_zone_text'>
                             Red {
                                 redScore >= 20 ?
                                     <span>is win</span> :
-                                    <span> zone {redScore}</span>
+                                    <span> zone </span>
                             }
                         </p>
                     }
@@ -54,7 +54,7 @@ export default function Main() {
                             Blue {
                                 blueScore >= 20 ?
                                     <span>is win</span> :
-                                    <span> zone {blueScore}</span>
+                                    <span> zone </span>
                             }
                         </p>
                     }
